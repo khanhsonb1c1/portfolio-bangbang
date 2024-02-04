@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -21,57 +21,91 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li>Home page</li>
-                        <li>About me</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Testimonial</li>
-                        <li>Contact</li>
+                        <li>
+                            <a id="btn-scroll-top-home">Home page</a>
+                        </li>
+                        <li>
+                            <a id="btn-about" href="#about">About me</a>
+                        </li>
+                        <li>
+                            <a id="btn-services" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a id="btn-projects" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a id="btn-feedback" href="#feedback">Feedback</a>
+                        </li>
+                        <li>
+                            <a id="btn-contact" href="#contact">Contact</a>
+                        </li>
                     </ul>
+                    
                 </div>
             </div>
         </div>
     </header>
     <div class="banner">
+        <div class="effect-banner-top-left">
+            <img src="./images/effect1.png" alt="">
+        </div>
         <div class="container">
             <div class="banner-content row">
                 <div class="banner-content-left col-6">
                     <span>I'm</span>
                     <h1>Kieu Thi Bang Bang</h1>
-                    <div class="text-custom">Development</div>
-                    <div class="btn">Hire me</div>
+                    <div class="typewriter mt-2">
+                        <h3>Designer & Development.</h3>
+                    </div>
+                    <!-- <div class="text-custom">Development</div> -->
+                    <a class="btn" href="./DoKhanhSon_FE.pdf" target="_blank">Hire me</a>
                 </div>
                 <div class="banner-content-right col-6">
-                    <img src="./images/avt-demo.png" alt="" />
+                    <img src="./images/avt2.png" alt="" />
                 </div>
             </div>
         </div>
     </div>
-    <section class="about">
+    <section class="about" id="about">
+        <div class="effect1">
+            <img src="./images/el6.png" alt="">
+        </div>
         <div class="container ">
             <h3 class="">About Me</h3>
             <div class="row about-content animate">
-                <div class="col-6"></div>
-                <div class="col-6 p3">
+                <div class="col-6 about-content-img">
+                    <img src="./images/about.jpg" alt="">
+                </div>
+                <div class="col-6 p1">
 
                     <div class="description">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Tempora quis officia iste cupiditate asperiores molestias
-                            tempore. Corporis recusandae laudantium sint repellendus.
-                            Earum, reiciendis numquam tenetur maiores veniam vero
-                            suscipit! At.
+                            I'm Bang Bang, a passionate and innovative Website Design enthusiast. Currently enrolled as
+                            a final-year IT student, I thrive on bringing creative visions to life through thoughtful
+                            and user-centric designs. Proficient in HTML, CSS, and JavaScript, I enjoy crafting visually
+                            appealing and seamlessly functional websites.
                         </p>
+                        <p class="mt-1">
+                            My journey involves hands-on experience in UI/UX design and optimizing web performance for
+                            optimal user interaction. Each project I undertake is a testament to my commitment to
+                            staying current with industry trends and delivering modern, captivating digital experiences.
+                        </p>
+                        <!-- <p class="mt-1">Join me on this exciting journey through my portfolio, where I showcase my dedication to
+                            creating engaging web solutions that leave a lasting impact. Let's connect and explore the
+                            endless possibilities of web design together.</p> -->
                     </div>
 
-                    <div class="btn">Read more</div>
+                    <a class="btn" href="./about.html" target="_blank">Read more</a>
 
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
+        <div class="effect2">
+            <img src="./images/el1.png" alt="">
+        </div>
         <div class="container">
             <h3>My Services</h3>
 
@@ -86,8 +120,9 @@
                             <span>Start from
                                 <strong class="text-secondary">$199.0</strong>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quo deleniti rem
-                                natus vero cum error
+                            <p>Transforming ideas into captivating web experiences. Specializing in Front-End
+                                development with expertise in HTML, CSS, and JavaScript for visually compelling and
+                                responsive websites
                                 .</p>
                         </div>
                     </div>
@@ -99,13 +134,14 @@
                             <i class="fa-solid fa-code"></i>
                         </div>
                         <div class="col-9 services-item-content">
-                            <h4>Front-end</h4>
+                            <h4>Back-end</h4>
                             <span>Start from
-                                <strong class="text-secondary">$199.0</strong>
+                                <strong class="text-secondary">$299.0</strong>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quo deleniti rem
-                                natus vero cum error
-                                .</p>
+                            <p>
+                                Elevate your online presence with my Back-End expertise. I specialize in creating
+                                secure, dynamic web solutions tailored to your needs, utilizing server-side languages
+                                and efficient database management.</p>
                         </div>
                     </div>
                 </div>
@@ -117,13 +153,13 @@
                             <i class="fa-solid fa-code"></i>
                         </div>
                         <div class="col-9 services-item-content">
-                            <h4>Front-end</h4>
+                            <h4>UI/UX</h4>
                             <span>Start from
-                                <strong class="text-secondary">$199.0</strong>
+                                <strong class="text-secondary">$99.0</strong>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quo deleniti rem
-                                natus vero cum error
-                                .</p>
+                            <p>Crafting seamless digital experiences with my UI/UX services. From intuitive interfaces
+                                to user-centric designs, I elevate your brand through compelling visuals and enhanced
+                                user interactions.</p>
                         </div>
                     </div>
                 </div>
@@ -135,13 +171,15 @@
                             <i class="fa-solid fa-code"></i>
                         </div>
                         <div class="col-9 services-item-content">
-                            <h4>Front-end</h4>
+                            <h4>Cloud Services</h4>
                             <span>Start from
-                                <strong class="text-secondary">$199.0</strong>
+                                <strong class="text-secondary">$599.0</strong>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quo deleniti rem
-                                natus vero cum error
-                                .</p>
+                            <p>
+
+                                Enhance efficiency with my Cloud solutions. I design secure, scalable systems, utilizing
+                                cloud tech for seamless data management, ensuring your digital infrastructure meets
+                                modern demands.</p>
                         </div>
                     </div>
                 </div>
@@ -153,7 +191,7 @@
 
 
 
-    <section class="portfolio projects">
+    <section class="portfolio projects" id="projects">
 
         <h3>My Projects</h3>
         <main class="mainContainer mt-3 animate">
@@ -162,153 +200,149 @@
             <div class="button-group">
                 <button class="button active" data-filter="*">All</button>
                 <button class="button" data-filter=".design">Design</button>
-                <button class="button" data-filter=".development">Development</button>
-                <button class="button" data-filter=".logo">Logo</button>
+                <button class="button" data-filter=".javascript">JavaScript</button>
+                <button class="button" data-filter=".full-stack">Full-stack</button>
             </div>
-            <!--  *****  Buttons Section Ends  *****  -->
 
-            <!--  *****  Gallery Section Starts  *****  -->
             <div class="gallery">
 
-                <!--  *****  Card 1 Starts  *****  -->
                 <div class="item design">
-                    <img src="./images/design1.jpg">
+                    <img src="./images/project6.png">
                     <div class="overlay">
-                        <a href="#">VIEW MORE</a>
+                        <a id="btn-scroll-top-2">VIEW MORE</a>
                     </div>
                 </div>
-                <!--  *****  Card 1 Ends  *****  -->
 
-                <!--  *****  Card 2 Starts  *****  -->
                 <div class="item design">
-                    <img src="./images/design2.jpg">
+                    <img src="./images/project2.png">
                     <div class="overlay">
-                        <a href="#">VIEW MORE</a>
+                        <a href="./project/bai1.html"  target="_blank">VIEW MORE</a>
                     </div>
                 </div>
-                <!--  *****  Card 2 Ends  *****  -->
 
-                <!--  *****  Card 3 Starts  *****  -->
-                <div class="item development">
-                    <img src="./images/website1.jpg">
+                <div class="item javascript">
+                    <img src="./images/project1.png">
                     <div class="overlay">
-                        <a href="#">VIEW MORE</a>
+                        <a href="./project/b6b5.html" target="_blank">VIEW MORE</a>
                     </div>
                 </div>
-                <!--  *****  Card 3 Ends  *****  -->
 
-                <!--  *****  Card 4 Starts  *****  -->
-                <div class="item development">
-                    <img src="./images/website2.jpg">
+                <div class="item javascript">
+                    <img src="./images/project3.png">
                     <div class="overlay">
-                        <a href="#">VIEW MORE</a>
+                        <a href="./project/b6b4.js" target="_blank">VIEW MORE</a>
                     </div>
                 </div>
-                <!--  *****  Card 4 Ends  *****  -->
 
-                <!--  *****  Card 5 Starts  *****  -->
-                <div class="item development">
-                    <img src="./images/website3.jpg">
+                <div class="item design">
+                    <img src="./images/project5.png">
                     <div class="overlay">
-                        <a href="#">VIEW MORE</a>
+                        <a href="./project/b1.html"  target="_blank">VIEW MORE</a>
                     </div>
                 </div>
-                <!--  *****  Card 5 Ends  *****  -->
 
-                <!--  *****  Card 6 Starts  *****  -->
-                <div class="item logo">
-                    <img src="./images/logo1.jpg">
+                <div class="item full-stack">
+                    <img src="./images/project4.jpg">
                     <div class="overlay">
-                        <a href="#">VIEW MORE</a>
+                        <a href="https://blog-react-ts-psi.vercel.app" target="_blank">VIEW MORE</a>
                     </div>
                 </div>
-                <!--  *****  Card 6 Ends  *****  -->
 
             </div>
-            <!--  *****  Gallery Section Ends  *****  -->
 
         </main>
 
     </section>
 
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
         <h3>Our Customer Feedback</h3>
         <div id="form-list" class="animate">
             <div id="list">
 
 
                 <div class="feedback-item ">
-                    <img src="./images/avt-demo.png" alt="" class="avatar">
+                    <img src="./images/user1.jpg" alt="" class="avatar">
                     <div class="content">
                         <div class="name">
-                            <span>Kieu Thi Bang Bang</span>
+                            <span>John Smith</span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur
-                            delectus quos culpa, nesciunt voluptatibus quisquam.</p>
+                        <p>"Exceptional work! Completed our project ahead of schedule, and the results exceeded
+                            expectations. Highly recommend!"</p>
                     </div>
                 </div>
 
                 <div class="feedback-item">
-                    <img src="./images/icons8-avatar-96.png" alt="" class="avatar">
+                    <img src="./images/user2.jpg" alt="" class="avatar">
                     <div class="content">
                         <div class="name">
-                            <span>Kieu Thi Bang Bang</span>
+                            <span>Jessica</span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet
-                            delectus quos culpa, nesciunt voluptatibus quisquam.</p>
-                    </div>
-                </div>
-
-
-                <div class="feedback-item">
-                    <img src="./images/icons8-avatar-96.png" alt="" class="avatar">
-                    <div class="content">
-                        <div class="name">
-                            <span>Kieu Thi Bang Bang</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet
-                            delectus quos culpa, nesciunt voluptatibus quisquam.</p>
+                        <p>"Outstanding creativity and professionalism. Transformed our vision into a stunning reality.
+                            A pleasure to work with!"</p>
                     </div>
                 </div>
 
 
                 <div class="feedback-item">
-                    <img src="./images/icons8-avatar-96.png" alt="" class="avatar">
+                    <img src="./images/user3.jpg" alt="" class="avatar">
                     <div class="content">
                         <div class="name">
-                            <span>Kieu Thi Bang Bang</span>
+                            <span>Catalina</span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet
-                            delectus quos culpa, nesciunt voluptatibus quisquam.</p>
+                        <p>"Reliable and efficient. Delivered a user-friendly website that perfectly aligns with our
+                            brand. Great communication throughout!"</p>
                     </div>
                 </div>
 
 
-
                 <div class="feedback-item">
-                    <img src="./images/icons8-avatar-96.png" alt="" class="avatar">
+                    <img src="./images/user4.jpg" alt="" class="avatar">
                     <div class="content">
                         <div class="name">
-                            <span>Kieu Thi Bang Bang</span>
+                            <span>Marry Dee</span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet
-                            delectus quos culpa, nesciunt voluptatibus quisquam.</p>
+                        <p>"Exemplary skills in backend development. Created a robust system with excellent performance.
+                            Couldn't be happier."</p>
                     </div>
                 </div>
 
 
 
                 <div class="feedback-item">
-                    <img src="./images/avt-demo.png" alt="" class="avatar">
+                    <img src="./images/user5.jpg" alt="" class="avatar">
                     <div class="content">
                         <div class="name">
-                            <span>Kieu Thi Bang Bang</span>
+                            <span>Wick Johnathan</span>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur
-                            delectus quos culpa, nesciunt voluptatibus quisquam.</p>
+                        <p>"Efficient cloud solutions! Streamlined our processes and improved accessibility. A true
+                            asset to our project."</p>
                     </div>
                 </div>
+
+
+                <div class="feedback-item ">
+                    <img src="./images/user1.jpg" alt="" class="avatar">
+                    <div class="content">
+                        <div class="name">
+                            <span>John Smith</span>
+                        </div>
+                        <p>"Exceptional work! Completed our project ahead of schedule, and the results exceeded
+                            expectations. Highly recommend!"</p>
+                    </div>
+                </div>
+
+                <div class="feedback-item">
+                    <img src="./images/user2.jpg" alt="" class="avatar">
+                    <div class="content">
+                        <div class="name">
+                            <span>Jessica</span>
+                        </div>
+                        <p>"Outstanding creativity and professionalism. Transformed our vision into a stunning reality.
+                            A pleasure to work with!"</p>
+                    </div>
+                </div>
+
 
 
 
@@ -328,7 +362,10 @@
 
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
+        <div class="effect2">
+            <img src="./images/el1.png" alt="" style="top: -2em;">
+        </div>
         <div class="container">
             <h3>Contact</h3>
 
@@ -341,25 +378,25 @@
                             Address:
                         </div>
                         <div class="value">
-                            <span>77 Do Phap Thuan, Da Nang city</span>
+                            <span>98 Duong Quang Ham street, Cau Giay District, Ha Noi city</span>
                         </div>
 
                     </div>
                     <div class="contact-content-item">
                         <div class="title">
-                            Address:
+                            Phone number:
                         </div>
                         <div class="value">
-                            <span>77 Do Phap Thuan, Da Nang city</span>
+                            <span>096.123.456</span>
                         </div>
 
                     </div>
                     <div class="contact-content-item">
                         <div class="title">
-                            Address:
+                            Email:
                         </div>
                         <div class="value">
-                            <span>77 Do Phap Thuan, Da Nang city</span>
+                            <span>bangbang2002@gmail.com</span>
                         </div>
 
                     </div>
@@ -384,30 +421,29 @@
 
 
                 <div class="col-6 contact-form">
-                    <span>The contact form is currently inactive. Get a functional and working contact form with
-                        Ajax & PHP
-                        in a few minutes. Just copy and paste the files, add a little code and you're done.</span>
+                    <span> I'm eager to hear from you! Feel free to share your thoughts, questions, or ongoing projects.
+                        I'm ready to collaborate and contribute to your success. Don't hesitate to reach out; I'm always
+                        here to listen and support. Fill out the form below or send an email directly. Thank you for
+                        visiting, and I'll get back to you as soon as possible!</span>
 
 
                     <div class="row mt-3">
                         <div class="col-6">
-                            <input type="text" placeholder="Your name...">
+                            <input id="name" type="text" placeholder="Your name...">
                         </div>
                         <div class="col-6">
-                            <input type="text" placeholder="Your email...">
+                            <input id="email" type="text" placeholder="Your email...">
                         </div>
                     </div>
                     <div style="padding:10px 5px;">
-                        <input type="text" style="" placeholder="Title...">
-
+                        <input id="title" type="text" placeholder="Title...">
                     </div>
                     <div style="padding:10px 5px;">
-                        <textarea placeholder="Content..."></textarea>
+                        <textarea id="content" placeholder="Content..."></textarea>
                     </div>
 
-                    <div class="btn" style="margin-left: 5px;">
-                        Submit
-                    </div>
+                    <div class="btn" style="margin-left: 5px;" onclick="submitForm()">Submit</div>
+
                 </div>
 
             </div>
@@ -418,10 +454,8 @@
 
 
 
-
-
     <footer>
-        <span>Design by Kieu Thi Bang Bang - K18 - 2024</span>
+        <span>Design by Kieu Thi Bang Bang - 30INF027_CNTT D2022 2</span>
     </footer>
 
 
@@ -429,52 +463,27 @@
         <i class="fa-solid fa-chevron-up"></i>
     </button>
 
-
-
-
-    <!-- script -->
-
+    <!-- import script -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
-    <script type="text/javascript">
-            // <!-- Xử lý cho hiệu ứng filter ở Projects -->
-
-        var $galleryContainer = $('.gallery').isotope({
-            itemSelector: '.item',
-            layoutMode: 'fitRows'
-        })
-
-        $('.button-group .button').on('click', function () {
-            $('.button-group .button').removeClass('active');
-            $(this).addClass('active');
-
-            var value = $(this).attr('data-filter');
-            $galleryContainer.isotope({
-                filter: value
-            })
-        })
-
-
-
-
-
-        // Xử lý hiệu ứng scroll ở banner
-
-        $(window).scroll(function(){
-            if($(window).scrollTop()) {
-                $("header").addClass("bg-secondary")
-            } else {
-                $("header").removeClass("bg-secondary")
-            }
-        })
-
-
-    </script>
-
     <script src="./js.js"></script>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`Name: ${name}%0D%0AContent: ${content}`)}`;
+
+            // Mở ứng dụng email
+            window.location.href = mailtoLink;
+        }
+    </script>
 </body>
 
 </html>

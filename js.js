@@ -1,23 +1,19 @@
 // Hiệu ứng cho slider feedback
-
 document.getElementById('next').onclick = () => {
-    const widthItem = document.querySelector(".feedback-item").offsetWidth;
-
-    console.log(widthItem, 'le')
+    const widthItem = document.querySelector(".feedback-item").offsetWidth + 20;
     document.getElementById("form-list").scrollLeft += widthItem;
 }
 
 
 document.getElementById('prev').onclick = () => {
-    const widthItem = document.querySelector(".feedback-item").offsetWidth;
-
-    console.log(widthItem, 'le')
+    const widthItem = document.querySelector(".feedback-item").offsetWidth + 20;
     document.getElementById("form-list").scrollLeft -= widthItem;
 }
 
 
 
 const mybutton = document.getElementById("scroll-top-btn");
+const scrollTop2 = document.getElementById("btn-scroll-top-2");
 const header = document.getElementById("header");
 const sections = document.querySelectorAll('section');
 const threshold = 100; // Khoảng cách từ đầu trang để hiển thị thanh header
@@ -59,6 +55,84 @@ window.onscroll = function () {
 };
 
 mybutton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+
+
+
+  // <!-- Xử lý cho hiệu ứng filter ở Projects -->
+
+  var $galleryContainer = $('.gallery').isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+})
+
+$('.button-group .button').on('click', function () {
+    $('.button-group .button').removeClass('active');
+    $(this).addClass('active');
+
+    var value = $(this).attr('data-filter');
+    $galleryContainer.isotope({
+        filter: value
+    })
+})
+
+
+
+
+
+// Xử lý hiệu ứng scroll ở banner
+
+$(window).scroll(function(){
+    if($(window).scrollTop()) {
+        $("header").addClass("bg-secondary")
+    } else {
+        $("header").removeClass("bg-secondary")
+    }
+})
+
+
+
+
+
+
+// Lặp qua tất cả các nút và thêm sự kiện click
+document.querySelectorAll('ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Lấy id của phần tử mục tiêu từ href
+        const targetId = this.getAttribute('href').substring(1);
+
+        // Lấy phần tử mục tiêu
+        const targetElement = document.getElementById(targetId);
+
+        // Cuộn đến phần tử mục tiêu
+        targetElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+scrollTop2.addEventListener("click", () => {
+    console.log("click")
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+const scrollTophome = document.getElementById("btn-scroll-top-home");
+
+scrollTophome.addEventListener("click", () => {
+    console.log("click")
     window.scrollTo({
         top: 0,
         behavior: "smooth"

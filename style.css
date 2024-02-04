@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.05em;
+    font-family: 'Open Sans', sans-serif;   
+     /* font-family: 'Poppins', sans-serif; */
+    /* letter-spacing: 0.05em; */
     line-height: 1.25em
 }
 
@@ -80,6 +81,31 @@ li {
     color: #6244C5;
 }
 
+@media screen and (max-width: 1024px) {
+    .col-3, .col-4, .col-6 {
+        width: 100%;
+    }
+
+     .col-9 {
+
+    }
+
+    .derection {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+
+a:-webkit-any-link {
+    text-decoration: unset;
+    color: unset;
+}
+
 
 .p1 {
     padding: 1em;
@@ -140,7 +166,15 @@ section {
 
 .header-middle .menu li {
     padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.header-middle .menu li:hover {
+    color: rgb(253, 187, 3);
+}
+
+
 
 .banner-content {
     /* height: 100vh; */
@@ -157,7 +191,12 @@ section {
     display: flex;
 }
 
+.banner img {
+    max-width: 100%;
+}
+
 .banner {
+    position: relative;
     background-color: var(--primary-bg);
 }
 
@@ -170,7 +209,62 @@ section {
     font-size: 3em;
 }
 
+
+
+.banner .effect-banner-top-left img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 20%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .banner .effect-banner-top-left img {
+        display: none;
+    }
+
+    .effect1 {
+        display: none;
+    }
+
+    .effect2 {
+        display: none;
+    }
+}
+
+
+
+.typewriter {
+    display: inline-block;
+}
+.typewriter h3 {
+    font-size: 1.5em;
+    overflow: hidden; /* Đảm bảo nội dung không được hiển thị cho đến khi kết thúc animation */
+    border-right: .15em solid orange; /* Con trỏ của máy đánh chữ */
+    white-space: nowrap; /* Giữ nội dung trên một dòng duy nhất */
+    margin: 0 auto; /* Tạo hiệu ứng cuộn khi máy đánh chữ diễn ra */
+    letter-spacing: .15em; /* Điều chỉnh nếu cần thiết */
+    animation: 
+      typing 3.5s steps(40, end) 1s, /* Kết thúc animation sau 1s */
+      blink-caret .75s step-end infinite;
+}
+
+/* Hiệu ứng đánh chữ */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Hiệu ứng con trỏ của máy đánh chữ */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+
 /* .banner-content-left .btn  */
+
 
 .btn {
     padding: 0.75em 0;
@@ -180,19 +274,58 @@ section {
     max-width: 170px;
     /* background-color: #f94626; */
     background-color: var(--secondary-clr);
-
+    cursor: pointer;
     border-radius: 8px;
-    color: white;
+    color: white !important;
     text-align: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    
+    background-color: #002f33;
 }
 
 .about {
     padding: 1em;
+    /* overflow-x: hidden; */
+    position: relative;
 }
+
+.effect1 {
+    position: absolute;
+    bottom: -35%;
+    left: -20px;
+}
+
 
 .about .about-content {
     align-items: center;
+    margin-top: 1em;
 }
+
+.about .about-content-img {
+    display: flex;
+    justify-content: center;
+
+
+}
+.about img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.about p {
+    font-size: 1.1em;
+    /* color: black; */
+    font-weight: 500;
+    line-height: 1.75em;
+}
+
+
 
 .about h3 {
     text-align: center;
@@ -201,14 +334,30 @@ section {
 
 .about .about-content .description {
     margin-top: 1em;
+    padding-right: 5em;
     font-size: 0.9em;
     color: var(--text-primary);
 
 }
 
+@media screen and (max-width: 1024px) {
+    .about .about-content .description {
+        padding-right: unset;
+    }
+}
+
+
 .services {
     background-color: var(--primary-bg);
     padding: 2em 1em;
+    position: relative;
+}
+
+.effect2 img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 150px;
 }
 
 .services-top {
@@ -231,32 +380,40 @@ section {
 .services .services-item {
     background-color: white;
     box-shadow: 0 10px 15px #cfcfcf;
-
     border-radius: 12px;
     padding: 2em;
     min-height: 150px;
+    transition: 0.5s;
+}
 
+.services .services-item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .services .services-item-img {
-    background-image: url("./images/bg-icon.png");
+    background-image: url("./images/effect8.png");
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     background-position: center center;
-
+    background-size: contain;
 }
 
 .services h4 {
     font-weight: 600;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
 }
 
 .services .services-item-img i {
     font-size: 3em;
     display: block;
+    color: var(--secondary-clr);
+
 }
+
 
 .services .services-item-content span {
     margin-bottom: 0.5em;
@@ -270,9 +427,6 @@ section {
 }
 
 
-
-.projects {}
-
 .projects h3 {
     text-align: center;
     font-size: 2em;
@@ -280,39 +434,10 @@ section {
 
 
 
-
-
-
-
-@media only screen and (min-width: 1200px) {
-    /* Kiểu cho desktop */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    /* Kiểu cho tablet */
-}
-
-@media only screen and (max-width: 767px) {
-    /* Kiểu cho mobile */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .portfolio {
     width: 100%;
     padding: 30px 8%;
-    min-height: 1000px;
+    min-height: 800px;
     /* background-color: var(--body-clr); */
 }
 
@@ -579,8 +704,8 @@ section {
 
 .contact {
     padding: 1em;
+    position: relative;
 }
-
 
 .contact h3 {
     font-size: 2em;
@@ -663,9 +788,6 @@ section {
 
 
 
-
-
-
 footer {
     background-color: var(--secondary-clr);
     padding: 0.75em;
@@ -698,4 +820,14 @@ footer {
 .show-animate .animate{
     transform: translateY(0);
 
+}
+
+
+
+#about-page .about{
+    min-height: 100vh;
+}
+
+#about-page .header {
+    position: relative;
 }

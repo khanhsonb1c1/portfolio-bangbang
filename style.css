@@ -130,6 +130,16 @@ a:-webkit-any-link {
 .mt-3 {
     margin-top: 2em;
 }
+.bg-secondary {
+    background-color: var(--secondary-clr);
+    color: white;
+    z-index: 1000;
+}
+
+
+section {
+    margin: 2em 0;
+}
 
 header {
     
@@ -139,19 +149,17 @@ header {
     left: 0;
     width: 100%;
     background-color: transparent;
-    transition: background-color 0.5s, color 0.5s; /* Thêm hiệu ứng transition cho màu nền và màu chữ */
-
+    transition: background-color 0.5s, color 0.5s; 
 }
 
-.bg-secondary {
-    background-color: var(--secondary-clr);
-    color: white;
-    z-index: 1000;
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-section {
-    margin: 2em 0;
-}
 
 .header-middle {
     display: flex;
@@ -159,22 +167,55 @@ section {
     padding: 0.75em 0;
 }
 
-.header-middle .menu ul {
-    display: flex;
-    list-style: none;
-}
-
-.header-middle .menu li {
+.header-middle .navbar li {
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
-.header-middle .menu li:hover {
+.header-middle .navbar li:hover {
     color: rgb(253, 187, 3);
 }
 
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    margin-right: 1em;
+    
+}
 
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        background-color: #00484ed5;
+        
+    }
+
+    nav.active {
+        opacity: 1;
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
 
 .banner-content {
     /* height: 100vh; */

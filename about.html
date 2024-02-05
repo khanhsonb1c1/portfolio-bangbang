@@ -19,6 +19,9 @@
                 <div class="logo">
 
                 </div>
+                <div class="menu-icon">
+                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                </div>
                 <nav class="navbar">
                     <ul>
                         <li>
@@ -50,7 +53,9 @@
 
     <section class="about" id="about-page">
         <div class="container ">
-            <h3 class="">About Me</h3>
+            <div class="back-btn"><i class="fa-solid fa-chevron-left"></i>
+                <a href="./index.html">Back to home</a></div>
+            <h3 class="mt-2">About Me</h3>
             <div class="row about-content">
                 <div class="col-6 about-content-img">
                     <img src="./images/about.jpg" alt="">
@@ -69,12 +74,12 @@
                             optimal user interaction. Each project I undertake is a testament to my commitment to
                             staying current with industry trends and delivering modern, captivating digital experiences.
                         </p>
-                        <!-- <p class="mt-1">Join me on this exciting journey through my portfolio, where I showcase my dedication to
+                        <p class="mt-1">Join me on this exciting journey through my portfolio, where I showcase my dedication to
                             creating engaging web solutions that leave a lasting impact. Let's connect and explore the
-                            endless possibilities of web design together.</p> -->
+                            endless possibilities of web design together.</p>
                     </div>
 
-                    <a class="btn"  href="./index.html" target="_blank">Back home</a>
+                    <!-- <a class="btn"  href="./index.html" target="_blank">Back home</a> -->
 
                 </div>
             </div>
@@ -100,7 +105,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
     <script src="./js.js"></script>
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
 
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`Name: ${name}%0D%0AContent: ${content}`)}`;
+
+            // Mở ứng dụng email
+            window.location.href = mailtoLink;
+        }
+
+
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

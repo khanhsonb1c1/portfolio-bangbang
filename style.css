@@ -82,13 +82,10 @@ li {
 }
 
 @media screen and (max-width: 1024px) {
-    .col-3, .col-4, .col-6 {
+    .col-3, .col-4, .col-6 ,.col-9{
         width: 100%;
     }
 
-     .col-9 {
-
-    }
 
     .derection {
         display: none;
@@ -271,6 +268,10 @@ nav ul {
 
     .effect2 {
         display: none;
+    }
+
+    .typewriter {
+        font-size: 0.7em;
     }
 }
 
@@ -697,6 +698,8 @@ nav ul {
 
 }
 
+
+
 #list {
     display: flex;
     width: max-content;
@@ -725,12 +728,19 @@ nav ul {
     .derection {
         display: none;
     }
+
+   
 }
 
 
 @media screen and (max-width: 768px) {
     .feedback .feedback-item {
         width: calc(50vw - 20px);
+    }
+
+    .feedback-item .avatar{
+        width: 100px !important;
+        height: 100px !important;
     }
 }
 
@@ -871,4 +881,88 @@ footer {
 
 #about-page .header {
     position: relative;
+}
+
+
+
+.my-projects .my-project-item{
+    margin: 1em 0;
+    max-width: 800px;
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.my-projects .my-project-item:hover {
+    transform: scale(1.05);
+}
+
+.my-projects .my-project-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.back-btn {
+    transition: 0.3;
+
+}
+.back-btn:hover{
+    cursor: pointer;
+    color: #05555c;
+}
+.back-btn a {
+    margin-left: 1em; 
+}
+
+.my-projects {
+    padding: 1em;
+}
+.my-projects .image img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+
+}
+
+.my-projects .content {
+    margin-left: 2em;
+}
+
+.my-projects .content span {
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+}
+
+.my-projects .content p {
+color: #5A5A5A;    
+margin-top: 1em;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .my-projects .row {
+        flex-wrap: nowrap;
+
+
+
+    }
+
+    .my-projects .content span {
+        font-size: 1em;
+    }
+
+    .my-projects p {
+        margin-top: 5px !important;
+        font-size: 0.9em;
+    }
 }

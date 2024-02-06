@@ -968,7 +968,7 @@ footer {
 
   
 .my-projects .my-project-items{
-    /* width: 100%; */
+    flex-wrap: wrap;
 
 }
 
@@ -1014,13 +1014,7 @@ margin-top: 1em;
 
 
 @media screen and (max-width: 768px) {
-    .my-projects .row {
-        flex-wrap: nowrap;
-
-
-
-    }
-
+ 
     .my-projects .content span {
         font-size: 1em;
     }

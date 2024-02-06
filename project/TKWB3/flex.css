@@ -1,0 +1,46 @@
+/* Đặt các thuộc tính chung cho container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Thiết lập header với màu nền và căn giữa nội dung */
+  .header {
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Thiết lập các cột với kích thước bằng nhau và khoảng cách */
+  .col {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    background-color: #e2e2e2;
+  }
+  
+  /* Thiết lập body1 với 3 cột và khoảng cách giữa */
+  .body1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Thiết lập footer giống như header */
+  .footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Đáp ứng cho màn hình có chiều rộng nhỏ hơn 600px */
+  @media (max-width: 600px) {
+    .body1, .col {
+      flex-direction: column;
+    }
+  }

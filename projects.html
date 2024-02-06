@@ -10,209 +10,738 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-   <div id="about-page">
-    <header id="header" class="header bg-secondary">
-        <div class="container">
-            <div class="header-top"></div>
-            <div class="header-middle">
-                <div class="logo">
+    <div id="about-page">
+        <header id="header" class="header bg-secondary">
+            <div class="container">
+                <div class="header-top"></div>
+                <div class="header-middle">
+                    <div class="logo">
 
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                    </div>
+                    <nav class="navbar">
+                        <ul>
+                            <li>
+                                <a href="./index.html">Home page</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">
+                                    About me
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Projects</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Feedback</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="menu-icon">
-                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
-                </div>
-                <nav class="navbar">
-                    <ul>
-                        <li>
-                            <a href="./index.html">Home page</a>
-                        </li>
-                        <li>
-                            <a  href="./index.html">
-                                About me
-                            </a>
-                        </li>
-                        <li>
-                            <a  href="./index.html">Services</a>
-                        </li>
-                        <li>
-                            <a  href="./index.html">Projects</a>
-                        </li>
-                        <li>
-                            <a  href="./index.html">Feedback</a>
-                        </li>
-                        <li>
-                            <a  href="./index.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
 
-    <section class="my-projects projects" id="">
-        <div class="container ">
-            <div class="back-btn"><i class="fa-solid fa-chevron-left"></i>
-            <a href="./index.html#projects">Back to home</a></div>
-            <h3 class="mt-2">My projects</h3>
-
-            <div class="my-project-items mt-3">
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images//project30.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>The mid-term test (30%)</span>
-                            <p>Designed according to the culinary landing page template.</p>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/test30/30%.html" target="_blank">Preview</a>
-                        <a href="https://github.com/bbicee/btap-tke-web/tree/main/Bai%2030%25" class="btn view-source-btn">View source</a>
-                    </div>
+        <section class="my-projects projects" id="">
+            <div class="container ">
+                <div class="back-btn"><i class="fa-solid fa-chevron-left"></i>
+                    <a href="./index.html#projects">Back to home</a>
                 </div>
+                <h3 class="mt-2">My projects</h3>
 
-
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images/html.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Practice exercise number 1</span>
-                            <p>Concepts and HTML language. </p>
+                <div class="my-project-items mt-3 row">
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/project30.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>The mid-term test (30%)</span>
+                                    <p>Designed according to the culinary landing page template.</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/test30/30%.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/tree/main/Bai%2030%25"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/lab1/bai1.html" target="_blank">Preview</a>
-                        <a href="" class="btn view-source-btn">View source</a>
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW1 - exercise 1</span>
+                                    <p>HTML basic</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB1/Bai1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB1/Bai1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
                     </div>
+
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW1 - exercise 2.1</span>
+                                    <p>Design document: Festival sinh viên 2023: “Tự hào Trường Đại học Thủ đô Hà Nội - Nơi chắp cánh ước mơ”</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB1/bai2.1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB1/bai2.1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW1 - exercise 2.2</span>
+                                    <p>Design document: Thầy giáo dũng cảm cứu người trong lũ dữ</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB1/bai2.2.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB1/bai2.2.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW1 - exercise 2.3</span>
+                                    <p>Design document: "Người thay thế 'cha đẻ' ChatGPT làm CEO tạm thời của OpenAI là ai?"</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB1/bai2.3.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB1/bai2.3.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW1 - exercise 3</span>
+                                    <p>The gentle breath of the past.</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB1/Bai3.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB1/bai3.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW1 - exercise 4</span>
+                                    <p>Introduce yourself.</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB1/bai4.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB1/bai4.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 1</span>
+                                    <p>Style inline, internal, external</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/bai1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/bai1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 2.1</span>
+                                    <p>Design page: "40 năm nhìn lại Windows 1.0: Thất bại tạo nên thành công cho hệ điều hành phổ biến nhất ngày nay"</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/bai2.1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/bai2.1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 2.2</span>
+                                    <p>sample design</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/bai2.2.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/bai2.2.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 3.1</span>
+                                    <p>Flex box tutorial</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/bai3.1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/bai3.1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 3.2</span>
+                                    <p>Flex box tutorial</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/bai3.2.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/bai3.2.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 3.3</span>
+                                    <p>Flex box tutorial</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/bai3.3.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/bai3.3.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 4.1</span>
+                                    <p>Design page: Mạng xã hội Lotus chính thức ra mắt người dùng Việt</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/bai4.1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/bai4.1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW2 - exercise 5</span>
+                                    <p>About me</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB2/web.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB2/web.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW3 - exercise 1</span>
+                                    <p>Matedial Design</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB3/bai1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB3/bai1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW3 - exercise 2</span>
+                                    <p>Design page: BAOMOI</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB3/bai2.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB3/bai2.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW3 - exercise 3</span>
+                                    <p>personal page</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB3/bai3.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB3/bai3.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW3 - exercise 3</span>
+                                    <p>Design page: Bão Mạng</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB3/baomang.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB3/baomang.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW3 - exercise 4</span>
+                                    <p>Flex properties</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB3/flex.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB3/flex.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW3 - exercise 5</span>
+                                    <p>Float properties</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB3/float.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB3/float.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW4 - exercise 1</span>
+                                    <p>Aura professtional responsive template</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB4/b1.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB4/b1.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW4 - exercise 2</span>
+                                    <p>Design page: Zing MP3 - Nghe nhạc mới, HOT nhất và tải nhạc miễn phí</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB4/b2.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB4/b2.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW4 - exercise 3</span>
+                                    <p>Design page: Fashion - Kalium WordPress Theme</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB4/b3.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB4/b3.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW4 - exercise 4</span>
+                                    <p>Design Header</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB4/b4.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB4/b4.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/html.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW4 - exercise 5</span>
+                                    <p>Personal website</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB4/webcanhan.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB4/webcanhan.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW5 - exercise 1</span>
+                                    <p>Print: "Hello world"</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB5/b1b5.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB5/b1b5.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW5 - exercise 2</span>
+                                    <p>Check number</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB5/b2b5.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB5/b2b5.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW5 - exercise 3</span>
+                                    <p>Random</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB5/b3b5.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB5/b3b5.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW6 - exercise 1</span>
+                                    <p>Register form</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB6/b6b4.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB6/b6b4.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW6 - exercise 2</span>
+                                    <p>Image slide</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB6/b6b5.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB6/b6b5.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW6 - exercise 3</span>
+                                    <p>Change color with javascript</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB6/b6b6.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB6/b6b6.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW6 - exercise 4</span>
+                                    <p>calculate</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB6/b6b6.2.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB6/b6b6.2.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW7 - exercise 1</span>
+                                    <p>Multi-level menu</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB7/b1b7.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB7/b1b7.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-project-item">
+                            <div class="row">
+                                <div class="image">
+                                    <img src="./images/JavaScript-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <span>TKW7 - exercise 2</span>
+                                    <p>Design HoYoLAB using Multi-level menu and other</p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn preview-btn" href="./project/TKWB7/index.html" target="_blank">Preview</a>
+                                <a href="https://github.com/bbicee/btap-tke-web/blob/main/TKWB7/index.html"
+                                    class="btn view-source-btn">View source</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   
+
+
+
+
                 </div>
-
-
-
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images/html.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Practice exercise number 2</span>
-                            <p>Knowledge of CSS. </p>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/lab2/bai2.html" target="_blank">Preview</a>
-                        <a href="https://github.com/bbicee/btap-tke-web/tree/main/TKWB2" class="btn view-source-btn">View source</a>
-                    </div>
-                </div>
-
-
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images/html.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Practice exercise number 3</span>
-                            <p>website layout. </p>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/bai1.html" target="_blank">Preview</a>
-                        <a href="https://github.com/bbicee/btap-tke-web/tree/main/TKWB3" class="btn view-source-btn">View source</a>
-                    </div>
-                </div>
-
-
-
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images/html.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Practice exercise number 4</span>
-                            <p> Navigation bar - layer.</p>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/b1.html" target="_blank">Preview</a>
-                        <a href="https://github.com/bbicee/btap-tke-web/tree/main/TKWB4" class="btn view-source-btn">View source</a>
-                    </div>
-                </div>
-
-
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images/JavaScript-logo.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Practice exercise number 5</span>
-                            <p>Javascript: Overview, Check number, random number. </p>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/lab5/bai5.html" target="_blank">Preview</a>
-                        <a href="https://github.com/bbicee/btap-tke-web/tree/main/TKWB5" class="btn view-source-btn">View source</a>
-                    </div>
-                </div>
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images/JavaScript-logo.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Practice exercise number 6</span>
-                            <p>Validate form, Slide show, change style by javascript. </p>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/b6b4.html" target="_blank">Preview</a>
-                        <a href="https://github.com/bbicee/btap-tke-web/tree/main/TKWB6" class="btn view-source-btn">View source</a>
-                    </div>
-                </div>
-
-
-                <div class="my-project-item">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./images/JavaScript-logo.png" alt="">
-                        </div>
-                        <div class="content">
-                            <span>Practice exercise number 7</span>
-                            <p>Dropdown menu </p>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <a class="btn preview-btn" href="./project/lab7/index.html" target="_blank">Preview</a>
-                        <a href="https://github.com/bbicee/btap-tke-web/tree/main/TKWB7" class="btn view-source-btn">View source</a>
-                    </div>
-                </div>
-
 
             </div>
-           
-        </div>
-    </section>
-
- 
+        </section>
 
 
 
-    <footer>
-        <span>Design by Kieu Thi Bang Bang - 30INF027_CNTT D2022 2</span>
-    </footer>
 
 
-    <button id="scroll-top-btn">
-        <i class="fa-solid fa-chevron-up"></i>
-    </button>
+        <footer>
+            <span>Design by Kieu Thi Bang Bang - 30INF027_CNTT D2022 2</span>
+        </footer>
 
-   </div>
+
+        <button id="scroll-top-btn">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>

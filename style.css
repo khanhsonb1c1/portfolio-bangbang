@@ -895,9 +895,8 @@ footer {
 
 
 .my-projects .my-project-item{
-    margin: 1em 0;
+    margin: 1em 0.5em;
     max-width: 800px;
-    width: 100%;
     padding: 1em;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -912,7 +911,7 @@ footer {
     position: absolute;
     right: -60%;
     bottom: 0;
-    width: 60%;
+    width: 75%;
     height: 100%;
     background-color: #477175c1;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
@@ -933,6 +932,12 @@ footer {
     align-content: center;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+}
+
+.my-project-item .row {
+    flex-wrap: nowrap;
+
 
 }
 
@@ -963,10 +968,7 @@ footer {
 
   
 .my-projects .my-project-items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    /* width: 100%; */
 
 }
 

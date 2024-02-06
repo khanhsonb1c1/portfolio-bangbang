@@ -1,0 +1,29 @@
+body {
+    font-family: Times 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(211, 39, 136);
+    color: rgb(218, 227, 235);
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    }
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    color: rgb(211, 39, 136);
+}
+footer{
+    background-color:rgb(211, 39, 136) ;
+    color:rgb(218, 227, 235);
+    padding: 20px;
+    text-align: center;
+}

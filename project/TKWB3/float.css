@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Container */
+  .container {
+    font-family: Arial, sans-serif; /* Chọn font cho tất cả các thành phần */
+    text-align: center; /* Căn nội dung ra giữa */
+    width: 100%;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #f2f2f2; /* Màu nền cho header */
+    padding: 20px;
+  }
+  
+  /* Columns */
+  .col {
+    float: left; /* Sử dụng float để tạo cột */
+    width: 33.333%; /* Chiều rộng cho mỗi cột */
+    padding: 15px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi chiều rộng */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Body1 */
+  .body1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #f2f2f2; /* Màu nền cho footer */
+    padding: 20px;
+  }
+  
+  /* Responsive layout - khi chiều rộng màn hình nhỏ hơn 600px */
+  @media (max-width: 600px) {
+    .col {
+      width: 100%; /* Các cột hiển thị theo chiều dọc */
+      margin-bottom: 20px; /* Khoảng cách giữa các cột */
+    }
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 6 Bài 4</title>
+    <script type="text/javascript" src="b6b4.js"></script>
+</head>
+<body>
+    <h2>FORM ĐĂNG KÝ</h2>
+    <form action="#" onsubmit="return validateForm()">
+        <p>Họ <input type="text" id="txt_ho" size="20" ></p>
+        <p>Tên <input type="text" id="txt_ten" size="20" ></p>
+
+        <label>Ngày sinh:</label>
+        <label for="ngay">Ngày</label>
+        <select name="ngay" id="ngay"></select>
+
+        <label for="thang">Tháng</label>
+        <select name="thang" id="thang"></select>
+
+        <label for="nam">Năm</label>
+        <select name="nam" id="nam"></select>
+
+        <br/>
+        <label for="rdNam">Giới tính</label>
+        <input type="radio" value="Nam" name="rdSize" id="rdNam">
+        <label for="rdNam">Nam</label>
+        <input type="radio" value="Nữ" name="rdSize" id="rdNu">
+        <label for="rdNu">Nữ</label>
+        <br/>
+        <p>Số điện thoại <input type="text" id="txt_dienthoai" size="20" ></p>
+        <label for="ckThich">Sở thích</label>
+        <input type="checkbox" value="Doc sach" name="ckThich"/>Đọc sách
+        <input type="checkbox" value="Xem phim" name="ckThich"/>Xem phim
+        <input type="checkbox" value="Nghe nhac" name="ckThich"/>Nghe nhạc
+        <input type="checkbox" value="Da bong" name="ckThich"/>Đá bóng
+        <br/>
+        <p><input type="submit" value="Submit"></p>
+        <p><input type="reset" value="Reset"></p>
+    </form>
+    <p id="pSoThichDaChon"></p>
+
+    <script src="b6b4.css"></script>
+</body>
+</html>

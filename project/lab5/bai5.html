@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="b2b5.js"></script>
+</head>
+<body>
+    <p><b>Nhập một số:</b></p>
+    <input type="number" id="num">
+    <button onclick="checkso()">Kiểm tra</button>
+    <p id="result"></p>
+    
+    <script>
+function checkso() {
+  var num = document.getElementById("num").value;
+  var result = document.getElementById("result");
+  
+  if (num % 2 == 0) {
+    result.textContent = num + " là số chẵn.";
+  } else {
+    result.textContent = num + " là số lẻ.";
+  }
+}
+    
+    </script>
+</body>
+</html>

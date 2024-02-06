@@ -138,3 +138,13 @@ scrollTophome.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+
+
+
+// Hiệu ứng sau khi chuyển trang có # thì scroll đến element chỉ định
+
+if (window.location.href.includes("#projects")) {
+    var element = document.getElementById("projects");
+element.scrollIntoView({behavior: "smooth"});
+}

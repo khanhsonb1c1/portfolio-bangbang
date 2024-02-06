@@ -904,21 +904,54 @@ footer {
     cursor: pointer;
     transition: 0.3s;
     position: relative;
+    overflow: hidden;
 }
 
 
 .my-projects .btn-group {
     position: absolute;
-    right: -200px;
+    right: -60%;
     bottom: 0;
-    width: 300px;
+    width: 60%;
     height: 100%;
-    background-color: #3f7277;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%);
+    background-color: #477175c1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    border-radius: 0 8px 8px 0;
 
 }
 
+.my-project-item:hover .btn-group {
+    right: 0;
+    opacity: 1;
+}
 
+.my-project-item .btn-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+.my-project-item .btn-group .btn {
+    margin: 5px 10px 5px 0;
+    padding: 0.5em !important;
+    width: 150px;
+}
+
+.my-project-item .btn-group .view-source-btn{
+    background-color: #F1DC4E;
+    color: black !important;
+    transition: 0.5s;
+}
+
+.my-project-item .btn-group .view-source-btn:hover{
+    background-color: #003337;
+    color: white !important;
+}
 
 
 
@@ -927,11 +960,8 @@ footer {
     transform: scale(1.05);
 }
 
-.my-projects .my-project-item:hover ~ .my-projects .btn-group {
-    right: 0 !important;
-}
 
-
+  
 .my-projects .my-project-items{
     display: flex;
     flex-direction: column;
